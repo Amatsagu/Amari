@@ -65,9 +65,21 @@ cat << EOF
 # STEP 3
 # CONFIGURE STYLES, ICONS & FONTS (Debian)
 #
-# Warning!
-# Those styles were composed for 1920x1080, 14'' laptop IPS (250n) screen.
-# Please modify font settings for your display.
+# Warning
+# Those styles were composed for 1920x1080, 14'' laptop [IPS] (250 nits)
+# screen. Please modify font size & aliasing settings for your display:
+#
+# Previously applied changes:
+#
+# gsettings set org.nemo.desktop font "Noto Sans 10"
+# gsettings set org.gnome.desktop.interface font-name "Noto Sans 10"
+# gsettings set org.gnome.desktop.interface document-font-name "Noto Sans 10"
+# gsettings set org.cinnamon.desktop.wm.preferences titlebar-font "Sans Bold 10"
+# gsettings set org.gnome.desktop.wm.preferences titlebar-font "Sans Bold 10"
+# gsettings set org.gnome.desktop.interface monospace-font-name "Monospace 11"
+# gsettings set org.gnome.desktop.interface font-antialiasing "rgba"
+# gsettings set org.gnome.desktop.interface font-hinting "slight"
+# gsettings set org.gnome.desktop.interface font-rgba-order "rgb"
 #
 # ===========================================================================
 EOF
@@ -110,6 +122,10 @@ printf "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 cat << EOF
 # ===========================================================================
 # FINISHED BASIC INSTALLATION
+#
+# Warning
+# Some GTK settings are quirky with auto reload, please restart your
+# computer to see all changes.
 #
 # Note
 # Consider checking ./get-app directory. It constains installation scripts for
