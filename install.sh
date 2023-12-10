@@ -18,13 +18,13 @@ cat << EOF
 EOF
 
 
-# Install microcode
+# Install microcode && drivers to enable hardware acceleration
 proc_type=$(lscpu)
 if grep -E "GenuineIntel" <<< ${proc_type}; then
     sudo apt install intel-microcode -y
-    proc_ucode=intel-ucode.img
 elif grep -E "AuthenticAMD" <<< ${proc_type}; then
     sudo apt install amd64-microcode -y
+    sudo apt install libegl-mesa0 libgbm1 libgl1-mesa-dri libglapi-mesa libglx-mesa0 mesa-utils-bin mesa-va-drivers mesa-vdpau-drivers mesa-vulkan-drivers -y
 fi
 
 # Install essential packages
