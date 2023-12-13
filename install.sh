@@ -124,8 +124,8 @@ cat << EOF
 #
 # Note
 # Consider checking ./get-app directory. It constains installation scripts for
-# basic applications. Installed this way apps will be configured to work
-# under wayland.
+# applications that are known to cause problems under wayland. Installed this
+# way apps will automatically use proper flags to launch under wayland.
 #
 # ===========================================================================
 EOF
