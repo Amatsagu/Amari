@@ -37,7 +37,14 @@ sudo apt autoremove --purge
 systemctl enable --now NetworkManager
 
 # Install Sway + its essentials
-sudo apt install sway waybar wlogout swaylock swayidle swaybg -y
+sudo apt install sway waybar wlogout swaylock swayidle swaybg greetd -y
+sudo systemctl enable greetd.service
+
+# Install frontend for greetd service
+sudo mkdir /usr/share/tuigreet
+sudo wget -O /usr/share/tuigreet/tuigreet-0.8.0 https://github.com/apognu/tuigreet/releases/download/0.8.0/tuigreet-0.8.0-x86_64
+sudo chmod +x /usr/share/tuigreet/tuigreet-0.8.0
+sudo ln -s /usr/share/tuigreet/tuigreet-0.8.0 /usr/bin/tuigreet
 
 # Install audio support
 sudo apt install pipewire pipewire-audio-client-libraries pavucontrol volumeicon-alsa pamixer -y
