@@ -1,6 +1,4 @@
-https://discord.com/api/download?platform=linux&format=deb
-
-#!/bin/bash
+!/bin/bash
 
 cat << EOF
 # ===========================================================================
