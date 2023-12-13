@@ -103,7 +103,7 @@ cat << EOF
 # ===========================================================================
 EOF
 
-sudo mv -f ./.config/* ~/.config/
+sudo cp -f ./.config/* ~/.config/
 
 printf "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 
