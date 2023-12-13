@@ -9,6 +9,9 @@
 mkdir -p ~/.config
 mkdir -p ~/.local/share/applications
 mkdir -p ~/.local/share/fonts
+sudo chmod +x ./control/*
+sudo chmod +x ./get-app/*
+sudo chmod +x ./remove-app/*
 
 cat << EOF
 # ===========================================================================
