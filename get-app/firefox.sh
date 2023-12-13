@@ -17,5 +17,10 @@ printf "\n\n\n\n\n\n\n\n\n\n"
 cat << EOF
 # ===========================================================================
 # FINISHED INSTALLATION
+#
+# Warning
+# This script uses latest version of stable firefox, outside Debian's
+# apt stream - you'll have to run this script again for major updates.
+#
 # ===========================================================================
 EOF

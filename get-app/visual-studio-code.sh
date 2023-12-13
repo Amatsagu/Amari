@@ -18,5 +18,15 @@ printf "\n\n\n\n\n\n\n\n\n\n"
 cat << EOF
 # ===========================================================================
 # FINISHED INSTALLATION
+#
+# Warning
+# This script uses latest version of stable VSC, outside Debian's
+# apt stream - you'll have to run this script again for major updates.
+#
+# Note
+# Visual studio code does not require being constantly updated. You can use
+# older versions of VSC just fine however newer versions may
+# improve Wayland compability.
+#
 # ===========================================================================
 EOF
