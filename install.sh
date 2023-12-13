@@ -32,7 +32,7 @@ elif grep -E "AuthenticAMD" <<< ${proc_type}; then
 fi
 
 # Install essential packages
-sudo apt install htop zip curl wget neofetch build-essential network-manager wayland-protocols blueman brightnessctl -y
+sudo apt install htop zip curl wget neofetch build-essential network-manager wayland-protocols blueman brightnessctl gpg -y
 sudo apt autoremove --purge
 systemctl enable --now NetworkManager
 
