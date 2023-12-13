@@ -7,7 +7,7 @@ cat << EOF
 EOF
 
 wget -O ~/GoogleChromeSetup.deb "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
-sudo apt install ~/GoogleChromeSetup.deb
+sudo apt install ~/GoogleChromeSetup.deb -y
 rm ~/GoogleChromeSetup.deb
 sudo cp ./desktop/google-chrome.desktop /usr/share/applications/google-chrome.desktop
 
