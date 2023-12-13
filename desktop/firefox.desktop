@@ -9,12 +9,12 @@ Actions=new-window;new-private-window;
 StartupWMClass=Firefox
 StartupNotify=true
 Terminal=false
-Exec=MOZ_ENABLE_WAYLAND=1 /usr/bin/firefox --new-window %u
+Exec=/usr/bin/firefox --new-window %u
 
 [Desktop Action new-window]
 Name=New Window
-Exec=MOZ_ENABLE_WAYLAND=1 /usr/bin/firefox --new-window %u
+Exec=/usr/bin/firefox --new-window %u
 
 [Desktop Action new-private-window]
 Name=New Incognito Window
-Exec=MOZ_ENABLE_WAYLAND=1 /usr/bin/firefox --private-window %u
+Exec=/usr/bin/firefox --private-window %u
