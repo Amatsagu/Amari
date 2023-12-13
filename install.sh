@@ -37,7 +37,7 @@ sudo apt autoremove --purge
 systemctl enable --now NetworkManager
 
 # Install Sway + its essentials
-sudo apt install sway waybar swaylock swayidle swaybg -y
+sudo apt install sway waybar wlogout swaylock swayidle swaybg -y
 
 # Install audio support
 sudo apt install pipewire pipewire-audio-client-libraries pavucontrol volumeicon-alsa pamixer -y
