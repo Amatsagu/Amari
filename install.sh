@@ -5,13 +5,13 @@
 # CREATE DIRECTORIES
 # ===========================================================================
 
-
 mkdir -p ~/.config
 mkdir -p ~/.local/share/applications
 mkdir -p ~/.local/share/fonts
-sudo chmod +x ./control/*
+sudo chmod +x ./script/*
 sudo chmod +x ./get-app/*
 sudo chmod +x ./remove-app/*
+sudo cp ./script/* /usr/local/bin/
 
 cat << EOF
 # ===========================================================================
@@ -45,6 +45,8 @@ sudo mkdir /usr/share/tuigreet
 sudo wget -O /usr/share/tuigreet/tuigreet-0.8.0 https://github.com/apognu/tuigreet/releases/download/0.8.0/tuigreet-0.8.0-x86_64
 sudo chmod +x /usr/share/tuigreet/tuigreet-0.8.0
 sudo ln -s /usr/share/tuigreet/tuigreet-0.8.0 /usr/bin/tuigreet
+sudo cp ./etc/greetd/config.toml /etc/greetd/config.toml
+sudo systemctl enable greetd.service
 
 # Install audio support
 sudo apt install pipewire pipewire-audio-client-libraries pavucontrol volumeicon-alsa pamixer -y
@@ -64,9 +66,8 @@ cat << EOF
 # ===========================================================================
 EOF
 
-# Install file manager, app launcher, 
-sudo apt install nemo fuzzel grimshot -y
-gsettings set org.gnome.nm-applet show-applet true
+# Install file manager, app launcher, and image capturer
+sudo apt install nemo fuzzel grim -y
 
 read -r -p "Press any key to continue (auto skip in 20s).." -t 20 -n 1 -s
 printf "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
@@ -98,7 +99,7 @@ EOF
 # Install styles, icons & fonts
 sudo apt install materia-gtk-theme breeze-cursor-theme papirus-icon-theme fonts-font-awesome fonts-hack fonts-hack-ttf fonts-hack-web fonts-noto fonts-noto-cjk fonts-noto-cjk-extra fonts-noto-color-emoji fonts-noto-core fonts-noto-extra fonts-noto-hinted fonts-noto-mono fonts-noto-ui-core fonts-noto-ui-extra fonts-noto-unhinted -y
 
-sh ./control/gsettings.sh
+sh ./script/gsettings.sh
 
 read -r -p "Press any key to continue (auto skip in 20s).." -t 20 -n 1 -s
 printf "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
@@ -110,7 +111,7 @@ cat << EOF
 # ===========================================================================
 EOF
 
-sudo cp -f ./.config/* ~/.config/
+sudo cp ./config/* ~/.config/
 
 printf "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 
