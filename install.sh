@@ -11,7 +11,7 @@ mkdir -p ~/.local/share/fonts
 sudo chmod +x ./script/*
 sudo chmod +x ./get-app/*
 sudo chmod +x ./remove-app/*
-sudo cp ./script/* /usr/local/bin/
+sudo cp ./script/* /usr/local/bin/ -r
 
 cat << EOF
 # ===========================================================================
@@ -33,7 +33,7 @@ fi
 
 # Install essential packages
 sudo apt install htop zip curl wget neofetch build-essential network-manager wayland-protocols blueman brightnessctl gpg -y
-sudo apt autoremove --purge
+sudo apt autoremove --purge -y
 systemctl enable --now NetworkManager
 
 # Install Sway + its essentials
@@ -99,7 +99,7 @@ EOF
 # Install styles, icons & fonts
 sudo apt install materia-gtk-theme breeze-cursor-theme papirus-icon-theme fonts-font-awesome fonts-hack fonts-hack-ttf fonts-hack-web fonts-noto fonts-noto-cjk fonts-noto-cjk-extra fonts-noto-color-emoji fonts-noto-core fonts-noto-extra fonts-noto-hinted fonts-noto-mono fonts-noto-ui-core fonts-noto-ui-extra fonts-noto-unhinted -y
 
-sh ./script/gsettings.sh
+sh ./script/amari-gsettings.sh
 
 read -r -p "Press any key to continue (auto skip in 20s).." -t 20 -n 1 -s
 printf "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
@@ -111,7 +111,7 @@ cat << EOF
 # ===========================================================================
 EOF
 
-sudo cp ./config/* ~/.config/
+sudo cp ./config/* ~/.config/ -r
 
 printf "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 
