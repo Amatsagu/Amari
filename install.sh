@@ -65,7 +65,7 @@ cat << EOF
 EOF
 
 # Install file manager, app launcher, 
-sudo apt install nemo fuzzels grimshot -y
+sudo apt install nemo fuzzel grimshot -y
 gsettings set org.gnome.nm-applet show-applet true
 
 read -r -p "Press any key to continue (auto skip in 20s).." -t 20 -n 1 -s
@@ -96,7 +96,7 @@ cat << EOF
 EOF
 
 # Install styles, icons & fonts
-sudo apt install materia-gtk-theme breeze-cursor-theme papirus-icon-theme fonts-hack fonts-hack-ttf fonts-hack-web fonts-noto fonts-noto-cjk fonts-noto-cjk-extra fonts-noto-color-emoji fonts-noto-core fonts-noto-extra fonts-noto-hinted fonts-noto-mono fonts-noto-ui-core fonts-noto-ui-extra fonts-noto-unhinted -y
+sudo apt install materia-gtk-theme breeze-cursor-theme papirus-icon-theme fonts-font-awesome fonts-hack fonts-hack-ttf fonts-hack-web fonts-noto fonts-noto-cjk fonts-noto-cjk-extra fonts-noto-color-emoji fonts-noto-core fonts-noto-extra fonts-noto-hinted fonts-noto-mono fonts-noto-ui-core fonts-noto-ui-extra fonts-noto-unhinted -y
 
 sh ./control/gsettings.sh
 
