@@ -30,7 +30,7 @@ window#waybar {
 #tray {
 	background: rgba(16, 16, 16, 0.85);
 	min-width: 48px;
-	padding: 4px 5px 0 5px;
+	padding: 2px 5px 0 5px;
 }
 
 #custom-launcher, #workspaces button {
