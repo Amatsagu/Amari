@@ -2,9 +2,9 @@ exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_SESSION_TY
 
 ### Variables
 set $mod Mod4
-set $term foot
-set $menu fuzzel | xargs swaymsg exec --
 set $scale 1.0
+set $outer_gaps 8
+set $inner_gaps 4
 
 include /etc/sway/config-vars.d/*
 include $HOME/.config/sway/config.d/*
@@ -12,17 +12,19 @@ include $HOME/.config/sway/config.d/*
 ### Theme
 seat * xcursor_theme Breeze-cursors 24
 font pango:Noto Sans Font 12
-for_window [class="^.*"] border pixel 4
-default_border pixel 4
-default_floating_border pixel 2
+for_window [class="^.*"] border pixel 2
+default_border pixel 2
+default_floating_border pixel 1
 hide_edge_borders smart
 
-client.focused           #7aa2f7 #1a1b26 #c0caf5 #7aa2f7 #526CA5
-client.focused_inactive           #1a1b26 #1a1b26 #c0caf5 #494C6B #28293A
-client.unfocused           #1a1b26 #1a1b26 #c0caf5 #1a1b26 #1a1b26
+client.focused           #54c4b0 #11312b #c0caf5 #54c4b0 #66aa9d
+# client.focused_inactive           #11312b #11312b #c0caf5 #494C6B #28293A
+# client.unfocused           #11312b #11312b #c0caf5 #11312b #11312b
+gaps outer $outer_gaps
+gaps inner $inner_gaps
 
 ### Background image
-output * scale $scale scale_filter linear bg $HOME/.config/sway/background/realistic-3.jpg fill
+output * scale $scale bg $HOME/.config/sway/background.jpg fill
 
 ### Idle configuration
 #
@@ -68,13 +70,13 @@ output * scale $scale scale_filter linear bg $HOME/.config/sway/background/reali
     bindsym Print exec slurp | grim -g - screenshot.png
 
     # Start a terminal
-    bindsym $mod+Return exec $term
+    bindsym $mod+Return exec foot
 
     # Kill focused window
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym $mod+d exec fuzzel | xargs swaymsg exec --
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -86,8 +88,8 @@ output * scale $scale scale_filter linear bg $HOME/.config/sway/background/reali
     # Reload the configuration file
     bindsym $mod+Shift+c reload
 
-    # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    # Control sway session
+    bindsym $mod+Shift+e exec wlogout -p layer-shell
 #
 # Moving around:
 #
