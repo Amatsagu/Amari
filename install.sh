@@ -32,13 +32,12 @@ elif grep -E "AuthenticAMD" <<< ${proc_type}; then
 fi
 
 # Install essential packages
-sudo apt install htop zip curl wget neofetch build-essential network-manager wayland-protocols blueman brightnessctl gpg -y
+sudo apt install htop zip curl wget neofetch build-essential network-manager wayland-protocols blueman brightnessctl gpg xdg-desktop-portal-wlr -y
 sudo apt autoremove --purge -y
 systemctl enable --now NetworkManager
 
 # Install Sway + its essentials
-sudo apt install sway waybar wlogout swaylock swayidle swaybg -y
-sudo systemctl enable greetd.service
+sudo apt install sway waybar wlogout swaylock swayidle swaybg mako-notifier -y
 
 # Install audio support
 sudo apt install pipewire pipewire-audio-client-libraries pavucontrol volumeicon-alsa pamixer -y
@@ -59,7 +58,7 @@ cat << EOF
 EOF
 
 # Install file manager, app launcher, and image capturer
-sudo apt install nemo fuzzel grim -y
+sudo apt install nemo fuzzel grim slurp -y
 
 read -r -p "Press any key to continue (auto skip in 20s).." -t 20 -n 1 -s
 printf "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
