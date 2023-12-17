@@ -22,6 +22,7 @@ client.focused           #54c4b0 #11312b #c0caf5 #54c4b0 #66aa9d
 # client.unfocused           #11312b #11312b #c0caf5 #11312b #11312b
 gaps outer $outer_gaps
 gaps inner $inner_gaps
+smart_gaps on
 
 ### Background image
 output * scale $scale bg $HOME/.config/sway/background.jpg fill
