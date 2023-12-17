@@ -3,10 +3,10 @@
 layer=overlay
 
 # STYLE
-font=Noto Sans 12
+font=Noto Sans 11
 width=220
-border-size=1
-progress-color=#e6edf3
+border-size=2
+progress-color=#e6edf3ff
 text-alignment=left
 anchor=top-right
 
@@ -14,18 +14,18 @@ anchor=top-right
 ## urgency
 [urgency=low]
 default-timeout=2500
-background-color=#101010
-border-color=#dda456
-text-color=#e6edf3
+background-color=#181818bf
+border-color=#e6edf3ff
+text-color=#e6edf3ff
 
 [urgency=normal]
 default-timeout=4000
-background-color=#101010
-border-color=#54c4b0
-text-color=#e6edf3
+background-color=#181818bf
+border-color=#e6edf3ff
+text-color=#e6edf3ff
 
 [urgency=critical]
 default-timeout=0
-background-color=#101010
-border-color=#dda456
-text-color=#a64433
+background-color=#181818bf
+border-color=#dda456ff
+text-color=#a64433ff
