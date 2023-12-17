@@ -64,6 +64,9 @@ output * scale $scale scale_filter linear bg $HOME/.config/sway/background/reali
     bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
     bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
+    # Screenshots
+    bindsym Print exec slurp | grim -g - screenshot.png
+
     # Start a terminal
     bindsym $mod+Return exec $term
 
