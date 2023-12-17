@@ -1,7 +1,7 @@
 # set floating (nontiling)for apps needing it:
 for_window [class="Yad" instance="yad"] floating enable
 for_window [app_id="yad"] floating enable
-for_window [app_id="blueman-manager"] floating enable,  resize set width 40 ppt height 30 ppt
+for_window [app_id="blueman-manager"] floating enable, resize set width 40 ppt height 30 ppt
 
 # set floating (nontiling) for special apps:
 for_window [app_id="pavucontrol"] floating enable, resize set width 40 ppt height 30 ppt
@@ -13,12 +13,13 @@ for_window [title="Open Folder"] floating enable, resize set width 50 ppt height
 for_window [title="Save File"] floating enable, resize set width 50 ppt height 60 ppt
 for_window [title="Save Files"] floating enable, resize set width 50 ppt height 60 ppt
 for_window [title="Save Folder"] floating enable, resize set width 50 ppt height 60 ppt
-for_window [title="File Operation Progress"] floating enable, border pixel 1, sticky enable, resize set width 40 ppt height 30 ppt
-for_window [title="nmtui"] floating enable
-for_window [title="htop"] floating enable, resize set width 50 ppt height 70 ppt
-for_window [class="vlc"] floating enable, border normal
-for_window [app_id="virt-manager"] floating enable, border normal
+for_window [title="File Operation Progress"] floating enable, sticky enable
+for_window [title="htop"] floating enable
+for_window [class="vlc"] floating enable
+for_window [app_id="virt-manager"] floating enable
 for_window [app_id="copyq"] floating enable, sticky enable, resize set height 600px width 550px, move position cursor, move down 330
+for_window [class="network-manager-gnome"] floating enable
+for_window [app_id="nm-connection-editor"] floating enable
 
 # set floating for window roles
 for_window [window_role="pop-up"] floating enable

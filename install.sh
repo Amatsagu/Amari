@@ -57,8 +57,8 @@ cat << EOF
 # ===========================================================================
 EOF
 
-# Install file manager, app launcher, and image capturer
-sudo apt install nemo fuzzel grim slurp -y
+# Install file manager, app launcher, and image capturer, graphical network manager
+sudo apt install nemo fuzzel grim slurp network-manager-gnome -y
 
 read -r -p "Press any key to continue (auto skip in 20s).." -t 20 -n 1 -s
 printf "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
@@ -102,7 +102,7 @@ cat << EOF
 # ===========================================================================
 EOF
 
-sudo cp ./config/* ~/.config/ -r
+sudo cp ./config/* ~/.config/ -r -v
 
 printf "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 

@@ -80,11 +80,11 @@
 		"interval": 5,
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "  {signalStrength}%",
-        "format-ethernet": "  {ipaddr}/{cidr}",   
-        "format-linked": "  {ifname} (No IP)",
+        "format-ethernet": "  {ipaddr}/{cidr}",   
+        "format-linked": "  {ifname} (No IP)",
         "format-disconnected": "No internet",
-        "tooltip-format": "{essid} {ifname}: {ipaddr}/{cidr}",
-		"on-click": "exec foot -T \"nmtui\" -a \"nmtui\" sh -c nmtui"
+        "tooltip-format": "  {essid} {ifname}: {ipaddr}/{cidr}",
+		"on-click": "exec nm-connection-editor"
     },
 	"backlight": {
         "device": "amdgpu_bl1", // Important
@@ -114,8 +114,8 @@
 		"on-click": "exec foot -T \"htop\" -a \"htop\" sh -c htop"
 	},
 	"cpu": {
-		"interval": 1,
-		"format": "CPU  {usage:2}%"
+		"interval": 2,
+		"format": "CPU  {usage:3}%"
 	},
 	"battery": {
 		"states": {
