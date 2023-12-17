@@ -1,24 +1,25 @@
 window#waybar {
-	font-size: 	16px;
-	font-family: Noto Sans;
-	background: #202130;
-	color: #c0caf5;
+	font-size: 	12px;
+	font-family: FontAwesome, Fira Code, Roboto, Helvetica, Arial, sans-serif;
+	background: rgba(24, 24, 24, 0.75);
+	color: #e6edf3;
 }
 
 #custom-right-arrow-dark,
 #custom-left-arrow-dark {
-	color: #11111a;
+	color: rgba(16, 16, 16, 0.85);
+	font-size: 20px;
 }
 #custom-right-arrow-light,
 #custom-left-arrow-light {
-	color: #202130;
-	background: #11111a;
+	color: #181818;
+	background: rgba(16, 16, 16, 0.85);
+	font-size: 20px;
 }
 
+#custom-launcher,
 #workspaces,
-#clock.1,
-#clock.2,
-#clock.3,
+#clock,
 #network,
 #backlight,
 #pulseaudio,
@@ -27,59 +28,37 @@ window#waybar {
 #battery,
 #disk,
 #tray {
-	background: #11111a;
+	background: rgba(16, 16, 16, 0.85);
+	min-width: 48px;
+	padding: 4px 5px 0 5px;
 }
 
-#workspaces button {
-	padding: 0 2px;
-	color: #3f5b96;
+#custom-launcher, #workspaces button {
+	color: #e6edf3;
+	font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	padding: 0;
 }
+
+#custom-launcher {
+	color: #dda456;
+}
+
 #workspaces button.focused {
-	color: #7aa2f7;
+	color: #54c4b0;
 }
+
 #workspaces button:hover {
-	box-shadow: inherit;
-	text-shadow: inherit;
-}
-#workspaces button:hover {
-	background: #11111a;
-	border: #11111a;
-}
-
-#network {
-	color: #89b4fa;
+	box-shadow: none;
+	text-shadow: none;
+	background: transparent;
+	border: none;
+	border-radius: unset;
 }
 
-#backlight {
-	color: #f9e2af;
-}
-
-#pulseaudio {
-	color: #f9a774;
-}
-
-#memory {
-	color: #76f77f;
-}
-
-#cpu {
-	color: #fa89fa;
-}
-
-#battery {
-	color: #f7768e;
-}
-
-#window {
-	font-family: Noto Sans Mono CJK JP;
-}
-
-#clock,
-#network,
-#backlight,
-#pulseaudio,
-#memory,
-#cpu,
-#battery {
-	padding: 0 10px;
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
 }
