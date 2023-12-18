@@ -61,10 +61,10 @@ window#waybar {
 	color: #dda456;
 }
 
+#network.disconnected,
 #memory.critical,
 #cpu.ciritcal,
-#battery.cirtical,
-#network.disconnected {
+#battery.cirtical {
 	color: #dd5656;
 	animation: wave 750ms linear infinite alternate;
 }
