@@ -26,7 +26,6 @@ window#waybar {
 #memory,
 #cpu,
 #battery,
-#disk,
 #tray {
 	background: rgba(16, 16, 16, 0.85);
 	min-width: 48px;
@@ -40,11 +39,8 @@ window#waybar {
 	padding: 0;
 }
 
-#custom-launcher {
-	color: #dda456;
-}
-
-#workspaces button.focused {
+#workspaces button.focused,
+#battery {
 	color: #54c4b0;
 }
 
@@ -56,9 +52,28 @@ window#waybar {
 	border-radius: unset;
 }
 
-@keyframes blink {
+#custom-launcher,
+#backlight.max,
+#pulseaudio.warning,
+#memory.warning,
+#cpu.warning,
+#battery.warning {
+	color: #dda456;
+}
+
+#memory.critical,
+#cpu.ciritcal,
+#battery.cirtical,
+#network.disconnected {
+	color: #dd5656;
+	animation: wave 750ms linear infinite alternate;
+}
+
+@keyframes wave {
+	from {
+		padding-top: 0px;
+	}
     to {
-        background-color: #ffffff;
-        color: #000000;
+		padding-top: 4px;
     }
 }
