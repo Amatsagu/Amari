@@ -1,6 +1,6 @@
 window#waybar {
-	font-size: 	12px;
-	font-family: FontAwesome, Fira Code, Roboto, Helvetica, Arial, sans-serif;
+	font-size: 	13px;
+	font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
 	background: rgba(24, 24, 24, 0.75);
 	color: #e6edf3;
 }
