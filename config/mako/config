@@ -3,8 +3,8 @@
 layer=overlay
 
 # STYLE
-font=Noto Sans 11
-width=220
+font=Roboto 13
+width=250
 border-size=2
 progress-color=#e6edf3ff
 text-alignment=left
@@ -13,13 +13,13 @@ anchor=top-right
 # CRITERA
 ## urgency
 [urgency=low]
-default-timeout=2500
+default-timeout=3500
 background-color=#181818bf
 border-color=#e6edf3ff
 text-color=#e6edf3ff
 
 [urgency=normal]
-default-timeout=4000
+default-timeout=5000
 background-color=#181818bf
 border-color=#e6edf3ff
 text-color=#e6edf3ff
