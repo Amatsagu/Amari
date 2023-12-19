@@ -21,11 +21,6 @@ sudo cp ./desktop/code.desktop /usr/share/applications/code.desktop
 sudo rm /usr/share/applications/code-url-handler.desktop
 xdg-mime default code.desktop text/plain
 
-# Create settings.json entry & enable custom title bar.
-# It's a temporary fix for VSC bug - it crashes when Sway tries to control app's title bar.
-mkdir -p ~/.config/Code/User
-echo "{ \"window.titleBarStyle\": \"custom\" }" > ~/.config/Code/User/settings.json
-
 printf "\n\n\n\n\n\n\n\n\n\n"
 
 cat << EOF
