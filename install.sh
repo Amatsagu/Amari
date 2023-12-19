@@ -70,19 +70,8 @@ cat << EOF
 #
 # Warning
 # Those styles were composed for 1920x1080, 14'' laptop [IPS] (250 nits)
-# screen. Please modify font size & aliasing settings for your display:
-#
-# Previously applied changes:
-#
-# gsettings set org.nemo.desktop font "Noto Sans 10"
-# gsettings set org.gnome.desktop.interface font-name "Noto Sans 10"
-# gsettings set org.gnome.desktop.interface document-font-name "Noto Sans 10"
-# gsettings set org.cinnamon.desktop.wm.preferences titlebar-font "Sans Bold 10"
-# gsettings set org.gnome.desktop.wm.preferences titlebar-font "Sans Bold 10"
-# gsettings set org.gnome.desktop.interface monospace-font-name "Monospace 11"
-# gsettings set org.gnome.desktop.interface font-antialiasing "rgba"
-# gsettings set org.gnome.desktop.interface font-hinting "slight"
-# gsettings set org.gnome.desktop.interface font-rgba-order "rgb"
+# screen. Please modify font size & aliasing settings for your display.
+# Check ./script/gsettings.sh
 #
 # ===========================================================================
 EOF
@@ -90,7 +79,7 @@ EOF
 # Install styles, icons & fonts
 sudo apt install materia-gtk-theme breeze-cursor-theme papirus-icon-theme fonts-font-awesome fonts-roboto fonts-roboto-hinted fonts-roboto-unhinted fonts-roboto-fontface fonts-firacode fonts-hack fonts-hack-ttf fonts-hack-web fonts-noto fonts-noto-cjk fonts-noto-cjk-extra fonts-noto-color-emoji fonts-noto-core fonts-noto-extra fonts-noto-hinted fonts-noto-mono fonts-noto-ui-core fonts-noto-ui-extra fonts-noto-unhinted -y
 
-sh ./script/amari-gsettings.sh
+sh ./script/gsettings.sh
 
 read -r -p "Press any key to continue (auto skip in 20s).." -t 20 -n 1 -s
 printf "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
