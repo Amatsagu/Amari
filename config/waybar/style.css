@@ -12,7 +12,7 @@ window#waybar {
 }
 #custom-right-arrow-light,
 #custom-left-arrow-light {
-	color: #182336;
+	color: rgba(0, 0, 0, 0);
 	background: rgba(16, 16, 16, 0.85);
 	font-size: 20px;
 }
@@ -41,7 +41,7 @@ window#waybar {
 
 #workspaces button.focused,
 #battery {
-	color: #00fa70;
+	color: #409be1;
 }
 
 #workspaces button:hover {
@@ -58,7 +58,7 @@ window#waybar {
 #memory.warning,
 #cpu.warning,
 #battery.warning {
-	color: #dda456;
+	color: #e69626;
 }
 
 #network.disconnected,
