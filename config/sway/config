@@ -11,7 +11,7 @@ include $HOME/.config/sway/config.d/*
 
 ### Theme
 seat * xcursor_theme Breeze-cursors 24
-font pango:Roboto Font 12
+font pango:Roboto Font 11
 for_window [class="^.*"] border pixel 2
 default_border pixel 2
 default_floating_border pixel 1
