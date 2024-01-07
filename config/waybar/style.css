@@ -1,7 +1,7 @@
 window#waybar {
 	font-size: 	16px;
 	font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-	background: rgba(24, 24, 24, 0.75);
+	background: rgba(24, 24, 24, 0.85);
 	color: #e6edf3;
 }
 
@@ -12,7 +12,7 @@ window#waybar {
 }
 #custom-right-arrow-light,
 #custom-left-arrow-light {
-	color: #101010d9;
+	color: rgba(24, 24, 24, 0.85);
 	background: rgba(16, 16, 16, 0.85);
 	font-size: 20px;
 }
@@ -41,7 +41,7 @@ window#waybar {
 
 #workspaces button.focused,
 #battery {
-	color: #5eb5eb;
+	color: #7ec0e9;
 }
 
 #workspaces button:hover {
@@ -53,7 +53,6 @@ window#waybar {
 }
 
 #custom-launcher,
-#backlight.max,
 #pulseaudio.warning,
 #memory.warning,
 #cpu.warning,

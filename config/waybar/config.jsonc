@@ -120,9 +120,6 @@
         "format": "  {percent}%",
 		"on-scroll-up": "exec brightnessctl set 5%+",
 		"on-scroll-down": "exec brightnessctl set 5%-",
-		"states": {
-			"max": 100
-		},
         "tooltip": false
     },
 	"pulseaudio": {
