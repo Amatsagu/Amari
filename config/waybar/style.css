@@ -12,8 +12,8 @@ window#waybar {
 }
 #custom-right-arrow-light,
 #custom-left-arrow-light {
-	color: transparent;
-	background: rgba(16, 16, 16, 0.85);
+	color: rgba(16, 16, 16, 0.85);
+	/* background: rgba(16, 16, 16, 0.85); */
 	font-size: 20px;
 }
 
