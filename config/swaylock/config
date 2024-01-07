@@ -20,7 +20,7 @@ datestr=%a, %e of %B
 
 # Add an image as a background 
 # In my setup the current wallpaper (requires wallpaper scripts in /scripts)
-image=~/.config/sway/background/realistic-1.jpg
+image=$HOME/.config/swaybg/locked.png
 
 # Fade in time
 fade-in=1
