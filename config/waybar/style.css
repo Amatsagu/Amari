@@ -12,7 +12,7 @@ window#waybar {
 }
 #custom-right-arrow-light,
 #custom-left-arrow-light {
-	color: rgba(255, 0, 0, 0.25);
+	color: rgba(255, 0, 0, 0.01);
 	background: rgba(16, 16, 16, 0.85);
 	font-size: 20px;
 }
