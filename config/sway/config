@@ -2,7 +2,7 @@ exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_SESSION_TY
 
 ### Variables
 set $mod Mod4
-set $scale 1.2
+set $scale 1.1
 set $outer_gaps 8
 set $inner_gaps 4
 
