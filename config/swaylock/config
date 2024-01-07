@@ -9,7 +9,7 @@
 # ----------------------------------------------------- 
 
 ignore-empty-password
-font="Noto Sans"
+font="Roboto"
 
 clock
 timestr=%R
