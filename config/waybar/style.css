@@ -1,7 +1,7 @@
 window#waybar {
 	font-size: 	16px;
 	font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-	background: transparent;
+	background: rgba(24, 24, 24, 0.75);
 	color: #e6edf3;
 }
 
@@ -12,7 +12,7 @@ window#waybar {
 }
 #custom-right-arrow-light,
 #custom-left-arrow-light {
-	color: #FFFFFF;
+	color: rgba(24, 24, 24, 0.75);
 	background: rgba(16, 16, 16, 0.85);
 	font-size: 20px;
 }
