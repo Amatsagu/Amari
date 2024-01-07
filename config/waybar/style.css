@@ -1,19 +1,19 @@
 window#waybar {
 	font-size: 	16px;
 	font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-	background: rgba(24, 24, 24, 0.85);
+	background: #181818d9;
 	color: #e6edf3;
 }
 
 #custom-right-arrow-dark,
 #custom-left-arrow-dark {
-	color: rgba(16, 16, 16, 0.85);
+	color: #101010d9;
 	font-size: 20px;
 }
 #custom-right-arrow-light,
 #custom-left-arrow-light {
-	color: rgba(168, 26, 26, 0.85);
-	background: rgba(16, 16, 16, 0.85);
+	color: #181818d9;
+	background: #101010d9;
 	font-size: 20px;
 }
 
@@ -27,7 +27,7 @@ window#waybar {
 #cpu,
 #battery,
 #tray {
-	background: rgba(16, 16, 16, 0.85);
+	background: #101010d9;
 	min-width: 48px;
 	padding: 2px 5px 0 5px;
 }
