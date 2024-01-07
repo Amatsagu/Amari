@@ -1,7 +1,7 @@
 window#waybar {
 	font-size: 	16px;
 	font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-	background: #050a15;
+	background: rgba(5, 10, 21, 0.75);
 	color: #e6edf3;
 }
 
