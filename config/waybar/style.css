@@ -41,7 +41,7 @@ window#waybar {
 
 #workspaces button.focused,
 #battery {
-	color: #409be1;
+	color: #5eb5eb;
 }
 
 #workspaces button:hover {
@@ -58,7 +58,7 @@ window#waybar {
 #memory.warning,
 #cpu.warning,
 #battery.warning {
-	color: #e69626;
+	color: #eca84a;
 }
 
 #network.disconnected,
