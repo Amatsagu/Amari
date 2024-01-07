@@ -12,7 +12,7 @@ window#waybar {
 }
 #custom-right-arrow-light,
 #custom-left-arrow-light {
-	color: rgba(0, 0, 0, 1);
+	color: rgba(16, 16, 16, 0.85);
 	background: rgba(16, 16, 16, 0.85);
 	font-size: 20px;
 }
@@ -41,7 +41,7 @@ window#waybar {
 
 #workspaces button.focused,
 #battery {
-	color: #ebd293;
+	color: #5eb5eb;
 }
 
 #workspaces button:hover {
