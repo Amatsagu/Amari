@@ -12,7 +12,7 @@ window#waybar {
 }
 #custom-right-arrow-light,
 #custom-left-arrow-light {
-	color: rgba(255, 0, 0, 0.25);
+	color: #182234;
 	background: rgba(16, 16, 16, 0.85);
 	font-size: 20px;
 }
@@ -41,7 +41,7 @@ window#waybar {
 
 #workspaces button.focused,
 #battery {
-	color: #7ec0e9;
+	color: #24c1e0;
 }
 
 #workspaces button:hover {
@@ -57,14 +57,14 @@ window#waybar {
 #memory.warning,
 #cpu.warning,
 #battery.warning {
-	color: #eca84a;
+	color: #fbbc04;
 }
 
 #network.disconnected,
 #memory.critical,
 #cpu.ciritcal,
 #battery.cirtical {
-	color: #dd5656;
+	color: #ea4335;
 	animation: wave 750ms linear infinite alternate;
 }
 
